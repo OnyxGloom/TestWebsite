@@ -1,0 +1,379 @@
+
+
+/*Index Stylings*/
+
+.whole-page {
+    margin: 0;
+    background: linear-gradient(-45deg, #094A73,  #D3BDF2, #075473, #A0D9B4);
+	background-size: 400% 400%;
+	animation: gradient 40s ease infinite;
+	height: 100vh;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeInAnimationTitle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.front-page {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55vh 10vh 5vh 30vh;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo {
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+
+
+    animation: fadeInAnimationTitle ease 25s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.name-title {
+    margin: 0;
+    color: #075473;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 15px;
+    text-shadow: 0 0 3px whitesmoke, 0 0 2px whitesmoke;
+    font-family: "GFS Didot", serif;
+}
+
+
+.nav-bar {
+    animation: fadeInAnimationTitle ease 15s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.nav-bar-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    /*border-bottom: 1px groove silver;
+    border-top: 1px groove silver;*/
+
+/*box-shadow: rgba(0, 0, 221, 0.1) 0 2px 2px,
+rgba(0, 0, 0, 0.1) 0 4px 4px,
+rgba(0, 0, 0, 0.1) 0 8px 8px,
+rgba(0, 0, 0, 0.1) 0 16px 16px,
+rgba(0, 0, 0, 0.1) 0 32px 32px,
+rgba(0, 0, 0, 0.1) 0 64px 64px;
+ */
+}
+
+.nav-bar-btn-about:hover {
+    opacity: 0.7;
+}
+
+.nav-bar-btn-work:hover {
+    opacity: 0.7;
+}
+
+.nav-bar-btn-contact:hover {
+    opacity: 0.7;
+}
+
+.nav-bar-btn > a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 15px;
+    text-shadow: 0 0 3px black, 0 0 2px black;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    font-size: xx-small;
+    /*background-image: url(./Assets/Images/Brushes-whitebackground.jpg);*/
+    background-size: 100%;
+}
+
+/*About me*/
+
+.about-body {
+    background-image: url(./Assets/Images/paint-2940513.jpg);
+    background-size: 200VH;
+}
+
+.about-box {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-large;
+    height: 50%;
+    width: 50%;
+    background-color: #ffffff4f;
+    padding: 3px;
+    
+}
+
+
+/*Contact me*/
+
+.contact-page {
+    background-image: url(./Assets/Images/art-1478831.jpg);
+    background-size: cover;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 30%;
+    margin-top: 25%;
+    margin-left: 40px;
+    background-color: rgba(245, 245, 245, 0.205);
+    width: 40%;
+    border-radius: 85px;
+}
+
+.contact-box > h2 {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align:center 
+}
+
+
+.contact-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style: none;
+}
+
+.contact-list > li > a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contact-box > div {
+    grid-area: 4 / 1 / 5 / 2;
+    display: flex;
+    justify-content: center;
+    background-color:  #d3bdf28e;
+    padding-top: 13px;
+}
+
+.contact-button {
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: #075473;
+    background-color: transparent;
+    border-radius: 5px;
+    text-shadow: 0 0 3px whitesmoke, 0 0 2px whitesmoke;
+    text-align: center;
+    
+}
+/* backgound info: Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1478831">Free Photos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1478831">Pixabay</a> */
+
+
+
+/*Universal*/
+
+.sub-page-title {
+    font-family: "GFS Didot", serif;
+    font-size: xx-large;
+}
+
+.main-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-large;
+}
+
+
+
+/*Social media tokens*/
+
+    .icon {
+    padding: 5px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  .contact-list > li > a > img:hover {
+      opacity: 0.7;
+  }
+
+  .contact-button:hover {
+    opacity: 0.7;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }
